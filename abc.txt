@@ -1,4 +1,4 @@
+hello world
 second line added
 first line added
-hello world
 edit abc.txt
