@@ -6,5 +6,3 @@ echo Stranger@1989 | sudo -S apt install puppet-agent -y
 echo Stranger@1989 | sudo -S sh -c 'echo "[main]" >>  /etc/puppetlabs/puppet/puppet.conf'
 echo Stranger@1989 | sudo -S sh -c 'echo "certname = puppetclient" >>  /etc/puppetlabs/puppet/puppet.conf'
 echo Stranger@1989 | sudo -S sh -c 'echo "server = puppetmaster" >>  /etc/puppetlabs/puppet/puppet.conf'
-echo Stranger@1989 | sudo -S systemctl start puppet
-echo Stranger@1989 | sudo -S systemctl enable puppet
