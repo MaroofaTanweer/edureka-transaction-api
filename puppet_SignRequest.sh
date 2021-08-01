@@ -1,4 +1,10 @@
 #! /bin/bash
-/opt/puppetlabs/bin/puppetserver ca list
-/opt/puppetlabs/bin/puppetserver ca sign --certname sit-centos 
-/opt/puppetlabs/bin/puppetserver ca list
+command="/opt/puppetlabs/bin/puppetserver ca list"
+op=$(eval "$command")
+if [ $op == "No certificates to list" ]
+then
+  echo "No certificates to accept"
+else
+  command="/opt/puppetlabs/bin/puppetserver ca sign --certname sit-centos"
+  eval "$command"
+fi
