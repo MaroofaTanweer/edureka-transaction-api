@@ -1,7 +1,9 @@
-#! /bin/bash
+#!/bin/bash
+whoami
 command="sudo /opt/puppetlabs/bin/puppetserver ca list"
+outputstr="No certificates to list"
 op=$(eval "$command")
-if [ $op == "No certificates to list" ]
+if [ "$op" == "$outputstr" ]
 then
   echo "No certificates to accept"
 else
