@@ -6,3 +6,4 @@ yum install puppet-agent -y
 sh -c 'echo "[main]" >  /etc/puppetlabs/puppet/puppet.conf'
 sh -c 'echo "certname = sit-centos" >>  /etc/puppetlabs/puppet/puppet.conf'
 sh -c 'echo "server = dev-master" >>  /etc/puppetlabs/puppet/puppet.conf'
+sh -c 'echo "environment = production" >>  /etc/puppetlabs/puppet/puppet.conf'
