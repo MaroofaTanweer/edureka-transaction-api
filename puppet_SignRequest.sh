@@ -1,4 +1,4 @@
 #! /bin/bash
-puppetserver ca list
-puppetserver ca sign --certname sit-centos 
-puppetserver ca list
+/opt/puppetlabs/bin/puppetserver ca list
+/opt/puppetlabs/bin/puppetserver ca sign --certname sit-centos 
+/opt/puppetlabs/bin/puppetserver ca list
