@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-prj-deployment
+  labels:
+    app: java-prj
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: java-prj
+  template:
+    metadata:
+      labels:
+        app: java-prj
+    spec:
+      containers:
+      - name: java
+        image: maroofatanweer/my_edureka_repo:java-prj
+        ports:
+        - containerPort: 8080
